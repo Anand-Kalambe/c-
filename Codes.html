@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:#282A35;
+      padding: 0.5em 1em;
+    }
+    .logo {
+      color: #fff;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+    .auth-buttons  {
+      color: #fff;
+      background-color: #007bff;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-left: 0.5em;
+      transition: background-color 0.3s;
+    }
+    .auth-buttons a:hover {
+      background-color: #0056b3;
+    }
+.search-container  {
+      padding: 0.5em 1em;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    img{
+  height: 50px;
+  width: 110px;
+ }
+    </style>
+</head>
+<body>
+    <nav>
+      <img src="./WhatsApp Image 2025-03-18 at 19.59.07_d6a47f81.jpg" alt="logo">
+        <ul class="nav-links">
+          
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/tutorial.html">Tutorials</a></li>
+          <li><a href="/reference.html">Reference</a></li>
+          <li><a href="/article.html">Articles</a></li>
+          <li><a href="/forum.html">Forum</a></li>
+        </ul>
+        <div><input class="search-container" type="text" placeholder="Search...">
+        <button class="search-container" type="button">Search</button></div>
+     
+         <div> <a class="auth-buttons" href="/signup.html">Sign Up</a>
+          <a  class="auth-buttons"href="/login.html">Log In</a></div>
+      
+      </nav> 
+    <P>It is a very well-known fact that computers can manage internally only 0s (zeros) and 1s (ones). This is true, and by means of sequences of 0s and 1s the computer can express any numerical value as its binary translation, which is a very simple mathematical operation (as explained in the paper numerical bases).
+
+        Nevertheless, there is no such evident way to represent letters and other non-numeric characters with 0s and 1s. Therefore, in order to do that, computers use ASCII tables, which are tables or lists that contain all the letters in the roman alphabet plus some additional characters. In these tables each character is always represented by the same order number. For example, the ASCII code for the capital letter "A" is always represented by the order number 65, which is easily representable using 0s and 1s in binary: 65 expressed as a binary number is 1000001.
+        
+        The standard ASCII table defines 128 character codes (from 0 to 127), of which, the first 32 are control codes (non-printable), and the remaining 96 character codes are representable characters:</P>
+        <h1>ASCII Table</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+                <th>4</th><th>5</th><th>6</th><th>7</th>
+                <th>8</th><th>9</th><th>A</th><th>B</th>
+                <th>C</th><th>D</th><th>E</th><th>F</th>
+            </tr>
+            <tr>
+                <th>0</th>
+                <td>NUL</td><td>SOH</td><td>STX</td><td>ETX</td>
+                <td>EOT</td><td>ENQ</td><td>ACK</td><td>BEL</td>
+                <td>BS</td><td>TAB</td><td>LF</td><td>VT</td>
+                <td>FF</td><td>CR</td><td>SO</td><td>SI</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>DLE</td><td>DC1</td><td>DC2</td><td>DC3</td>
+                <td>DC4</td><td>NAK</td><td>SYN</td><td>ETB</td>
+                <td>CAN</td><td>EM</td><td>SUB</td><td>ESC</td>
+                <td>FS</td><td>GS</td><td>RS</td><td>US</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td></td><td>!</td><td>"</td><td>#</td>
+                <td>$</td><td>%</td><td>&</td><td>'</td>
+                <td>(</td><td>)</td><td>*</td><td>+</td>
+                <td>,</td><td>-</td><td>.</td><td>/</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>0</td><td>1</td><td>2</td><td>3</td>
+                <td>4</td><td>5</td><td>6</td><td>7</td>
+                <td>8</td><td>9</td><td>:</td><td>;</td>
+                <td><</td><td>=</td><td>></td><td>?</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>@</td><td>A</td><td>B</td><td>C</td>
+                <td>D</td><td>E</td><td>F</td><td>G</td>
+                <td>H</td><td>I</td><td>J</td><td>K</td>
+                <td>L</td><td>M</td><td>N</td><td>O</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>P</td><td>Q</td><td>R</td><td>S</td>
+                <td>T</td><td>U</td><td>V</td><td>W</td>
+                <td>X</td><td>Y</td><td>Z</td><td>[</td>
+                <td>\</td><td>]</td><td>^</td><td>_</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>`</td><td>a</td><td>b</td><td>c</td>
+                <td>d</td><td>e</td><td>f</td><td>g</td>
+                <td>h</td><td>i</td><td>j</td><td>k</td>
+                <td>l</td><td>m</td><td>n</td><td>o</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>p</td><td>q</td><td>r</td><td>s</td>
+                <td>t</td><td>u</td><td>v</td><td>w</td>
+                <td>x</td><td>y</td><td>z</td><td>{</td>
+                <td>|</td><td>}</td><td>~</td>
+            </tr>
+        </table>
+        <p>
+            * This panel is organized to be easily read in hexadecimal: row numbers represent the first digit and the column numbers represent the second one. For example, the "A" character is located at the 4th row and the 1st column, for that it would be represented in hexadecimal as 0x41 (65).
+
+Because most systems nowadays work with 8bit bytes, which can represent 256 different values, in addition to the 128 standard ASCII codes there are other 128 that are known as extended ASCII, which are platform- and locale-dependent. So there is more than one extended ASCII character set.
+
+The two most used extended ASCII character sets are the one known as OEM, that comes from the default character set incorporated by default in the IBM-PC and the other is the ANSI extend ASCII which is used by most recent operating systems.
+
+The first of them, the OEM character set, is the one used by the hardware of the immense majority of PC compatible machines, and was also used under the old DOS system. It includes some foreign signs, some marked characters and pieces to represent panels
+        </p>
+</body>
+</html>

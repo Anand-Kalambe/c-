@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Topics Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F3ECEA;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #00bcd4;
+            color: white;
+        }
+        td {
+            font-size: 14px;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .forum-link {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .forum-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+                font-size: 12px;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:#282A35;
+      padding: 0.5em 1em;
+    }
+    .logo {
+      color: #fff;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+    .auth-buttons  {
+      color: #fff;
+      background-color: #007bff;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-left: 0.5em;
+      transition: background-color 0.3s;
+    }
+    .auth-buttons a:hover {
+      background-color: #0056b3;
+    }
+.search-container  {
+      padding: 0.5em 1em;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    img{
+  height: 50px;
+  width: 110px;
+ }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./WhatsApp Image 2025-03-18 at 19.59.07_d6a47f81.jpg" alt="logo">
+        <ul class="nav-links">
+            
+            <li><a href="/index.html">Home</a></li>
+          <li><a href="/tutorial.html">Tutorials</a></li>
+          <li><a href="/reference.html">Reference</a></li>
+          <li><a href="/article.html">Articles</a></li>
+          <li><a href="/forum.html">Forum</a></li>
+        </ul>
+        <div><input class="search-container" type="text" placeholder="Search...">
+        <button class="search-container" type="button">Search</button></div>
+     
+         <div> <a class="auth-buttons" href="/signup.html">Sign Up</a>
+          <a  class="auth-buttons"href="/login.html">Log In</a></div>
+      
+      </nav>
+    <h1>Forum Topics</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Forum</th>
+                <th>Last Active Topic</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#" class="forum-link">Beginners</a></td>
+                <td>Understanding basic syntax - <strong>2 hours ago</strong> by <em>user123</em></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="forum-link">Windows Programming</a></td>
+                <td>Handling events in Win32 - <strong>1 day ago</strong> by <em>devCoder</em></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="forum-link">General Discussion</a></td>
+                <td>Best practices in C++ - <strong>3 days ago</strong> by <em>cppGuru</em></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="forum-link">Game Programming</a></td>
+                <td>Optimizing game loops - <strong>5 hours ago</strong> by <em>gameDev</em></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
